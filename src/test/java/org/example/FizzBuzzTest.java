@@ -72,4 +72,15 @@ class FizzBuzzTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void play_shouldReturnFizzBuzz_whenCalledWith0() {
+        // GIVEN
+        int number = 0;
+        String expected = "FizzBuzz";
+        //WHENN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
 }
