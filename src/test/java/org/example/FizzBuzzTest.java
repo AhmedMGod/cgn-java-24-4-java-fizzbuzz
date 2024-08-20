@@ -17,4 +17,59 @@ class FizzBuzzTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void play_shouldReturn4_whenCalledWith4() {
+        // GIVEN
+        int number = 4;
+        String expected = "4";
+        //WHENN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void play_shouldReturnFizz_whenCalledWith3() {
+        // GIVEN
+        int number = 3;
+        String expected = "Fizz";
+        //WHENN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void play_shouldReturnFizz_whenCalledWith6() {
+        // GIVEN
+        int number = 6;
+        String expected = "Fizz";
+        //WHENN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void play_shouldReturnBuzz_whenCalledWith5() {
+        // GIVEN
+        int number = 5;
+        String expected = "Buzz";
+        //WHENN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void play_shouldReturnFizzBuzz_whenCalledWith15() {
+        // GIVEN
+        int number = 15;
+        String expected = "FizzBuzz";
+        //WHENN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
 }
